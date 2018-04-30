@@ -11,7 +11,7 @@ int main (int argc, char* argv[])
 	liaison *a;
 	s = init_sommets();
 	a = init_aretes(s);
-	printf("%d",a[0].metre);
+	printf("%s\n",(a[2].noeuds[0]).nom);
 	
 	return 0;
 }

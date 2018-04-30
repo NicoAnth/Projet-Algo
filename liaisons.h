@@ -40,7 +40,7 @@ int Frejus = 3600;
 int Serre_Chevalier = 4650;
 int Pontillas = 3150
 
-// 4 pistes (39):
+// 4 pistes (47):
 
 Vertes (7):
 
@@ -53,24 +53,29 @@ barre 1800
 celvan 11500
 3 croix 6750
 
-Bleues (13):
+Bleues (18):
 
 myrtille 4500
-vallons 3000
-eftanis 4350
-genepi 750
+vallons 2500
+vallons2 500
+eftanis 600
+eftanis suite 350
+eftanis 3900
+genepi 1350
 foret 1650
 fangeas 1950
 alpage 750
-marteau 5700
+marteau 1500 //1
+marteau 4200 //2
 mélezes 1950
 sellettes 2700
-goulet 3600
+goulet 1350 //1
+goulet 1800 //2
+goulet 450
 combes 1650
-gauche 1500
 traverse 1250
 
-Rouges (11) :
+Rouges (14) :
 
 aiguillette 4500
 saludes 4200

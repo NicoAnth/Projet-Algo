@@ -4,7 +4,7 @@
 
 station * init_sommets ()
 {
-	station *a = malloc(26*sizeof(station));
+	station *a = malloc(27*sizeof(station));
 	
 	a[0].tabvoisins = malloc(1*sizeof(station));
 	a[1].tabvoisins = malloc (4*sizeof(station));
@@ -26,12 +26,13 @@ station * init_sommets ()
 	a[17].tabvoisins = malloc (3*sizeof(station));
 	a[18].tabvoisins = malloc (1*sizeof(station));
 	a[19].tabvoisins = malloc (1*sizeof(station));
-	a[20].tabvoisins = malloc (4*sizeof(station));
+	a[20].tabvoisins = malloc (3*sizeof(station));
 	a[21].tabvoisins = malloc (3*sizeof(station));
 	a[22].tabvoisins = malloc (1*sizeof(station));
 	a[23].tabvoisins = malloc (3*sizeof(station));
 	a[24].tabvoisins = malloc (2*sizeof(station));
 	a[25].tabvoisins = malloc (2*sizeof(station));
+	a[26].tabvoisins = malloc (3*sizeof(station));
 	
 	a[0].num = 0;
 	a[0].nom = "Col du Prorel";
@@ -78,7 +79,7 @@ station * init_sommets ()
 	a[6].nom = "Serre Ratier";
 	a[6].tabvoisins[0] = a[4];
 	a[6].tabvoisins[1] = a[16];
-	a[6].tabvoisins[2] = a[20];
+	a[6].tabvoisins[2] = a[26];
 	a[6].tabvoisins[3] = a[21];
 	a[6].y = 10;
 	
@@ -162,8 +163,7 @@ station * init_sommets ()
 	a[20].nom = "Eftanis";
 	a[20].tabvoisins[0] = a[10];
 	a[20].tabvoisins[1] = a[9];
-	a[20].tabvoisins[2] = a[5];
-	a[20].tabvoisins[3] = a[24];
+	a[20].tabvoisins[2] = a[26];
 	a[20].y = 20;
 	
 	a[21].num = 21;
@@ -179,7 +179,7 @@ station * init_sommets ()
 	a[22].y = 21.5;
 	
 	a[23].num = 23;
-	a[23].nom = "Barre";
+	a[23].nom = "Barres";
 	a[23].tabvoisins[0] = a[10];
 	a[23].tabvoisins[1] = a[11];
 	a[23].tabvoisins[2] = a[12];
@@ -196,6 +196,14 @@ station * init_sommets ()
 	a[25].tabvoisins[0] = a[11];
 	a[25].tabvoisins[1] = a[18];
 	a[25].y = 12;
+	
+	a[26].num = 26;
+	a[26].nom = "Combes";
+	a[26].tabvoisins[0] = a[24];
+	a[26].tabvoisins[1] = a[9];
+	a[26].tabvoisins[2] = a[5];
+	a[26].y = 20;
+	
 	
 	return a;
 	
