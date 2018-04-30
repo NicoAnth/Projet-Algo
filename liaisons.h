@@ -79,21 +79,20 @@ Rouges (14) :
 
 aiguillette 4500
 saludes 4200
+Eduits puis Saludes 3300
 bois des coqs 2700
-petit alpe 3450
-draye_1 1800
-draye_2 1570
-draye_3 1570
-échaillon 2100
-rocher de l enfer 1950
+draye 1800 //1
+draye 1570 //2
+draye 1570 //3
+échaillon 1950
 clot gauthier 2850
 bois lacets 2700
-bez 3150
+Bez 2850 // De Prairie à Le Bez
 cucumelle 4500
 prairies 750
-stade 1500 // de i6 à Aravet
+stade 1500 // de Marteau à Aravet
 
-Noires (8):
+Noires (7):
 
 cabane du berger 2250
 mur chevalier 1800
@@ -102,5 +101,4 @@ luc alphand 2400
 casse du boeuf 4950
 isolée 2850
 aile froide 1650
-creux du loup 2550
 super draye 900

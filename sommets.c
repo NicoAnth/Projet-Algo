@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-station * init_sommets ()
+station* init_sommets ()
 {
 	station *a = malloc(27*sizeof(station));
 	
@@ -63,7 +63,7 @@ station * init_sommets ()
 	a[3].y = 22;
 	
 	a[4].num = 4;
-	a[4].nom = "Serre-Chevalier";
+	a[4].nom = "Serre Chevalier";
 	a[4].tabvoisins[0] = a[5];
 	a[4].tabvoisins[1] = a[20];
 	a[4].tabvoisins[2] = a[21];

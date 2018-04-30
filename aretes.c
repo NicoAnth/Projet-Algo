@@ -4,7 +4,7 @@
 
 liaison *init_aretes(station *s){
 	
-	liaison *l = malloc(66*sizeof(liaison));
+	liaison *l = malloc(77*sizeof(liaison));
 	
 	//teleski
 	
@@ -222,7 +222,7 @@ liaison *init_aretes(station *s){
 	l[33].noeuds[0] = s[3];
 	l[33].noeuds[1] = s[5];
 	
-	l[34].nom = "Vallons2";
+	l[34].nom = "Vallons";
 	l[34].type = 5;
 	l[34].metre = 500;
 	l[34].noeuds[0] = s[5];
@@ -329,6 +329,155 @@ liaison *init_aretes(station *s){
 	l[51].metre = 1250;
 	l[51].noeuds[0] = s[10];
 	l[51].noeuds[1] = s[11];
+	 
+	 // Pistes Rouges
+	 
+	l[52].nom = "Aiguillette";
+	l[52].type = 6;
+	l[52].metre = 4500;
+	l[52].noeuds[0] = s[19];
+	l[52].noeuds[1] = s[2];
+	
+	l[53].nom = "Saludes";
+	l[53].type = 6;
+	l[53].metre = 4200;
+	l[53].noeuds[0] = s[0];
+	l[53].noeuds[1] = s[1];
+	
+	l[54].nom = "Eduits puis Saludes";
+	l[54].type = 6;
+	l[54].metre = 3300;
+	l[54].noeuds[0] = s[19];
+	l[54].noeuds[1] = s[1];
+	
+	l[55].nom = "Bois des coqs";
+	l[55].type = 6;
+	l[55].metre = 2700;
+	l[55].noeuds[0] = s[10];
+	l[55].noeuds[1] = s[11];
+	
+	l[57].nom = "Bois des coqs";
+	l[57].type = 6;
+	l[57].metre = 2700;
+	l[57].noeuds[0] = s[3];
+	l[57].noeuds[1] = s[1];
+	
+	l[58].nom = "Draye";
+	l[58].type = 6;
+	l[58].metre = 1800;
+	l[58].noeuds[0] = s[4];
+	l[58].noeuds[1] = s[21];
+	
+	l[59].nom = "Draye";
+	l[59].type = 6;
+	l[59].metre = 1570;
+	l[59].noeuds[0] = s[21];
+	l[59].noeuds[1] = s[5];
+	
+	l[60].nom = "Draye";
+	l[60].type = 6;
+	l[60].metre = 1570;
+	l[60].noeuds[0] = s[5];
+	l[60].noeuds[1] = s[6];
+	
+	l[61].nom = "Echaillon";
+	l[61].type = 6;
+	l[61].metre = 1950;
+	l[61].noeuds[0] = s[20];
+	l[61].noeuds[1] = s[10];
+	
+	l[62].nom = "Clot Gauthier";
+	l[62].type = 6;
+	l[62].metre = 2850;
+	l[62].noeuds[0] = s[8];
+	l[62].noeuds[1] = s[10];
+	
+	l[63].nom = "Bois Lacets";
+	l[63].type = 6;
+	l[63].metre = 2700;
+	l[63].noeuds[0] = s[9];
+	l[63].noeuds[1] = s[25];
+	
+	l[64].nom = "Bez";
+	l[64].type = 6;
+	l[64].metre = 2850;
+	l[64].noeuds[0] = s[25];
+	l[64].noeuds[1] = s[18];
+	
+	l[65].nom = "Cucumelle";
+	l[65].type = 6;
+	l[65].metre = 4500;
+	l[65].noeuds[0] = s[14];
+	l[65].noeuds[1] = s[13];
+	
+	l[66].nom = "Prairie";
+	l[66].type = 6;
+	l[66].metre = 750;
+	l[66].noeuds[0] = s[13];
+	l[66].noeuds[1] = s[25];
+	
+	l[67].nom = "Bois des coqs";
+	l[67].type = 6;
+	l[67].metre = 2700;
+	l[67].noeuds[0] = s[10];
+	l[67].noeuds[1] = s[11];
+	
+	l[68].nom = "Stade";
+	l[68].type = 6;
+	l[68].metre = 1500;
+	l[68].noeuds[0] = s[24];
+	l[68].noeuds[1] = s[15];
+	
+	//Pistes Noires
+	
+	l[69].nom = "Cabane du Berger puis Myrtilles";
+	l[69].type = 7;
+	l[69].metre = 5050;
+	l[69].noeuds[0] = s[0];
+	l[69].noeuds[1] = s[1];
+	
+	l[70].nom = "Mur Chevalier puis Combes";
+	l[70].type = 7;
+	l[70].metre = 3900;
+	l[70].noeuds[0] = s[4];
+	l[70].noeuds[1] = s[5];
+	
+	l[71].nom = "Pylône";
+	l[71].type = 7;
+	l[71].metre = 2400;
+	l[71].noeuds[0] = s[21];
+	l[71].noeuds[1] = s[6];
+	
+	l[72].nom = "Luc Alphand";
+	l[72].type = 7;
+	l[72].metre = 2400;
+	l[72].noeuds[0] = s[6];
+	l[72].noeuds[1] = s[16];
+	
+	l[73].nom = "Casse du Boeuf";
+	l[73].type = 7;
+	l[73].metre = 4950;
+	l[73].noeuds[0] = s[9];
+	l[73].noeuds[1] = s[17];
+	
+	l[74].nom = "Isolée";
+	l[74].type = 7;
+	l[74].metre = 3550;
+	l[74].noeuds[0] = s[7];
+	l[74].noeuds[1] = s[10];
+	
+	l[75].nom = "Ailefroide";
+	l[75].type = 7;
+	l[75].metre = 1650;
+	l[75].noeuds[0] = s[7];
+	l[75].noeuds[1] = s[22];
+	
+	l[76].nom = "Super Draye";
+	l[76].type = 7;
+	l[76].metre = 1800;
+	l[76].noeuds[0] = s[8];
+	l[76].noeuds[1] = s[10];
+	
 	
 	return l;
 }
