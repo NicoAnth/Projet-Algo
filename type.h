@@ -6,6 +6,7 @@
 
 //La struct station se décompose comme suit :
 //La variable poids permet de determiner le poids final du noeud
+//La variable nbv recense le nombre de voisins
 //La variable true indique si le noeud a deja été parcouru
 //La variable ant permet de connaitre le predecesseur du noeud
 //La variable tabvoisins correspond au tableau d'adresses des voisins

@@ -24,7 +24,7 @@ float calculPoids (station s1, station s2, int lvl)
 			j++;
 		}
 	}
-	
+	// ! Implémenter boucle pour calculer tous les chemins ! 
 	// Calcul poids remontées
 	
 		if (buffer[0].type == 0)
@@ -108,6 +108,7 @@ void dijkstra (station dep, station arr, int lvl){
 	station *now = &s[27];
 	int i;
 	int verif=1;
+	
 	// On initialise toutes les variables à 0 et les poids à -1
 	// hormis le point de depart
 	for (i=0;i<28;i++)
@@ -117,7 +118,7 @@ void dijkstra (station dep, station arr, int lvl){
 		s[i].ant = 0;
 		if (s[i].num == dep.num)
 		{
-			s[i].poids = 0;
+			s[i].poids = -2;
 		}
 	}
 	  
@@ -141,7 +142,7 @@ void dijkstra (station dep, station arr, int lvl){
 			{
 				if ((((*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl))<(*(*now).tabvoisins[i]).poids) || (*(*now).tabvoisins[i]).poids == -1 )
 				{
-						(*(*now).tabvoisins[i]).poids = calculPoids(*now,(*(*now).tabvoisins[i]),lvl);
+						(*(*now).tabvoisins[i]).poids = (*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl);
 						(*(*now).tabvoisins[i]).ant = (*now).num;
 				}
 			}
