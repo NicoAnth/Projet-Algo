@@ -1,4 +1,4 @@
-
+// ! Multiplier par 2 les distances en mètre !
 //Diviser 3 Croix en 2
 //Diviser Celvan (Aiguillette à Chantemerle)
 //Diviser Clot Gauthier (De Clot Gauthier à peid Eychauda)

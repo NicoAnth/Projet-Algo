@@ -11,15 +11,11 @@
 int main (int argc, char* argv[])
 {
 	
-	station *s;
-	liaison *a;
 	station dep;
 	station arr;
 	int lvl;
 	char pos[35];
 	char dest[35];
-	s = init_sommets();
-	a = init_aretes(s);
 	
 	printf("Quel type de skieur êtes vous ? Tapez 1 pour Débutant ou 2 pour Expérimenté :");
 	lvl = lireNombre();

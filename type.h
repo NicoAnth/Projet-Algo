@@ -8,15 +8,16 @@
 //La variable poids permet de determiner le poids final du noeud
 //La variable true indique si le noeud a deja été parcouru
 //La variable ant permet de connaitre le predecesseur du noeud
+//La variable tabvoisins correspond au tableau d'adresses des voisins
 typedef struct station station;
 struct station{
 	char* nom;
 	int num;
-	int y; // ordonnée du point 0-25
+	int nbv;
 	int poids;
 	int true;
 	int ant;
-	station *tabvoisins;
+	station **tabvoisins;
 };
 
 //Definition du type : 0 teleski, 1 telesiege, 2 oeuf, 3 telecabine, 4 vert, 5 bleue, 6 rouge, 7 noire
