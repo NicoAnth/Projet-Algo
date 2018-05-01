@@ -74,7 +74,7 @@ liaison *init_aretes(station *s){
 	l[10].type = 1;
 	l[10].metre = 3900;
 	l[10].noeuds[0] = s[6];
-	l[10].noeuds[1] = s[4];
+	l[10].noeuds[1] = s[26];
 	
 	l[11].nom = "Orée du Bois";
 	l[11].type = 1;

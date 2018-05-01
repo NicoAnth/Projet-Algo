@@ -13,7 +13,7 @@ station* init_sommets ()
 	a[4].tabvoisins = malloc (3*sizeof(station));
 	a[5].tabvoisins = malloc (2*sizeof(station));
 	a[6].tabvoisins = malloc (4*sizeof(station));
-	a[7].tabvoisins = malloc (1*sizeof(station));
+	a[7].tabvoisins = malloc (2*sizeof(station));
 	a[8].tabvoisins = malloc (2*sizeof(station));
 	a[9].tabvoisins = malloc (3*sizeof(station));
 	a[10].tabvoisins = malloc (2*sizeof(station));
@@ -28,9 +28,9 @@ station* init_sommets ()
 	a[19].tabvoisins = malloc (1*sizeof(station));
 	a[20].tabvoisins = malloc (3*sizeof(station));
 	a[21].tabvoisins = malloc (3*sizeof(station));
-	a[22].tabvoisins = malloc (1*sizeof(station));
+	a[22].tabvoisins = malloc (2*sizeof(station));
 	a[23].tabvoisins = malloc (3*sizeof(station));
-	a[24].tabvoisins = malloc (2*sizeof(station));
+	a[24].tabvoisins = malloc (3*sizeof(station));
 	a[25].tabvoisins = malloc (2*sizeof(station));
 	a[26].tabvoisins = malloc (3*sizeof(station));
 	
@@ -86,6 +86,7 @@ station* init_sommets ()
 	a[7].num = 7;
 	a[7].nom = "L'Eychauda";
 	a[7].tabvoisins[0] = a[22];
+	a[7].tabvoisins[1] = a[10];
 	a[7].y = 25;
 	
 	a[8].num = 8;
@@ -121,7 +122,7 @@ station* init_sommets ()
 	a[13].num = 13;
 	a[13].nom = "Village de Fréjus";
 	a[13].tabvoisins[0] = a[17];
-	a[13].tabvoisins[1] = a[18];
+	a[13].tabvoisins[1] = a[25];
 	a[13].tabvoisins[2] = a[14];
 	a[13].y = 14;
 	
@@ -151,7 +152,7 @@ station* init_sommets ()
 	
 	a[18].num = 18;
 	a[18].nom = "Le Bez";
-	a[18].tabvoisins[0] = a[11];
+	a[18].tabvoisins[0] = a[25];
 	a[18].y = 1;
 	
 	a[19].num = 19;
@@ -175,6 +176,7 @@ station* init_sommets ()
 	
 	a[22].num = 22;
 	a[22].nom = "Pied Eychauda";
+	a[22].tabvoisins[0] = a[7];
 	a[22].tabvoisins[0] = a[10];
 	a[22].y = 21.5;
 	
@@ -189,6 +191,7 @@ station* init_sommets ()
 	a[24].nom = "Marteau";
 	a[24].tabvoisins[0] = a[6];
 	a[24].tabvoisins[1] = a[15];
+	a[24].tabvoisins[1] = a[9];
 	a[24].y = 15.5;
 	
 	a[25].num = 25;
@@ -208,4 +211,3 @@ station* init_sommets ()
 	return a;
 	
 }
-
