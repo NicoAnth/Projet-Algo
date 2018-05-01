@@ -1,6 +1,15 @@
 
-
-
+//Diviser 3 Croix en 2
+//Diviser Celvan (Aiguillette à Chantemerle)
+//Diviser Clot Gauthier (De Clot Gauthier à peid Eychauda)
+//Effacer Bois Lacets puis diviser une piste Bois (de i6 à Fréjus), une piste "Bois puis Lacets" (de i6 à Prairie)
+//trou de 54 à 57
+//trou 66 à 68
+//Rajouter Pré Jeanne
+//Rajouter Chaméant
+//Rajouter Sellettes de Barres à i9
+//Creer piste de serre chevalier à col de la ricelle (bleue)
+//Creer une nouvellle piste Fangeas de i6 à i9
 
 //transports : (23)
 

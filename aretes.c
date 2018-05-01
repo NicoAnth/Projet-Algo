@@ -109,7 +109,7 @@ liaison *init_aretes(station *s){
 	l[16].nom = "Côte de Chevalier";
 	l[16].type = 1;
 	l[16].metre = 2400;
-	l[16].noeuds[0] = s[11];
+	l[16].noeuds[0] = s[10];
 	l[16].noeuds[1] = s[20];
 	
 	l[17].nom = "Vallons";
@@ -163,8 +163,8 @@ liaison *init_aretes(station *s){
 	l[24].nom = "Lièvre Blanc";
 	l[24].type = 4;
 	l[24].metre = 1650;
-	l[24].noeuds[0] = s[8];
-	l[24].noeuds[1] = s[3];
+	l[24].noeuds[0] = s[15];
+	l[24].noeuds[1] = s[6];
 
 	l[25].nom = "Route Aravet";
 	l[25].type = 4;
@@ -178,7 +178,7 @@ liaison *init_aretes(station *s){
 	l[26].noeuds[0] = s[6];
 	l[26].noeuds[1] = s[16];
 	
-	l[27].nom = "Chêne";
+	l[27].nom = "Chêne puis Route Aravet";
 	l[27].type = 4;
 	l[27].metre = 5500;
 	l[27].noeuds[0] = s[6];
@@ -234,7 +234,7 @@ liaison *init_aretes(station *s){
 	l[35].noeuds[0] = s[4];
 	l[35].noeuds[1] = s[20];
 
-	l[36].nom = "Eftanis suite"; //liaison entre Eftanis et Combes
+	l[36].nom = "Eftanis"; //liaison entre Eftanis et Combes
 	l[36].type = 5;
 	l[36].metre = 350;
 	l[36].noeuds[0] = s[20];
@@ -279,8 +279,8 @@ liaison *init_aretes(station *s){
 	l[43].nom = "Marteau";
 	l[43].type = 5;
 	l[43].metre = 4200;
-	l[43].noeuds[0] = s[9];
-	l[43].noeuds[1] = s[24];
+	l[43].noeuds[0] = s[15];
+	l[43].noeuds[1] = s[17];
 	
 	l[44].nom = "Mélèzes";
 	l[44].type = 5;
@@ -350,12 +350,6 @@ liaison *init_aretes(station *s){
 	l[54].noeuds[0] = s[19];
 	l[54].noeuds[1] = s[1];
 	
-	l[55].nom = "Bois des coqs";
-	l[55].type = 6;
-	l[55].metre = 2700;
-	l[55].noeuds[0] = s[10];
-	l[55].noeuds[1] = s[11];
-	
 	l[57].nom = "Bois des coqs";
 	l[57].type = 6;
 	l[57].metre = 2700;
@@ -416,11 +410,6 @@ liaison *init_aretes(station *s){
 	l[66].noeuds[0] = s[13];
 	l[66].noeuds[1] = s[25];
 	
-	l[67].nom = "Bois des coqs";
-	l[67].type = 6;
-	l[67].metre = 2700;
-	l[67].noeuds[0] = s[10];
-	l[67].noeuds[1] = s[11];
 	
 	l[68].nom = "Stade";
 	l[68].type = 6;
@@ -472,7 +461,7 @@ liaison *init_aretes(station *s){
 	l[75].noeuds[0] = s[7];
 	l[75].noeuds[1] = s[22];
 	
-	l[76].nom = "Super Draye";
+	l[76].nom = "Clot Gauthier puis Super Draye";
 	l[76].type = 7;
 	l[76].metre = 1800;
 	l[76].noeuds[0] = s[8];

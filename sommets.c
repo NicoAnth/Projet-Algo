@@ -168,7 +168,7 @@ station* init_sommets ()
 	a[20].y = 20;
 	
 	a[21].num = 21;
-	a[21].nom = "Orée du bois";
+	a[21].nom = "Orée du Bois";
 	a[21].tabvoisins[0] = a[5];
 	a[21].tabvoisins[1] = a[6];
 	a[21].tabvoisins[2] = a[24];

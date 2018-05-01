@@ -39,7 +39,7 @@ int main (int argc, char* argv[])
 		return 0;
 	}
 	
-	dijkstra (dep,arr,lvl);
+	dijkstra(dep,arr,lvl);
 	
 	return 0;
 }

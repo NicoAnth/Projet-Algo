@@ -18,7 +18,6 @@ void calculPoids (station s1, station s2, int lvl)
 	
 	for (i=0;i<77;i++)
 	{
-		// Revoir, dès qu'il a plusieurs voisins ?
 		if(l[i].noeuds[0].num == s1.num && l[i].noeuds[1].num == s2.num)
 		{
 			buffer[j] = l[i];
@@ -42,10 +41,9 @@ void calculPoids (station s1, station s2, int lvl)
 void dijkstra (station dep, station arr, int lvl){
 	
 	station *s = init_sommets();
-	liaison *a = init_aretes(s);		
+	liaison *a = init_aretes(s);
+	station *now;
 	int i;
-	station now;
-	
 	// On initialise toutes les variables à 0 et les poids à -1
 	// hormis le point de depart
 	for (i=0;i<27;i++)
@@ -53,21 +51,19 @@ void dijkstra (station dep, station arr, int lvl){
 		s[i].poids = -1;
 		s[i].true = 0;
 		s[i].ant = 0;
-		if (dep.num == s[i].num)
+		if (s[i].num == dep.num)
 		{
 			s[i].poids = 0;
 			s[i].true = 1;
-			now = s[i];
+			now = &s[i];
 		}
 	}
 	
-	if (now.tabvoisins[0].true == 0)
-	{
-		calculPoids(now,now.tabvoisins[0],lvl) ;
-	}
+	//Cela ne fonctionne pas pour les sommets qui recherchent un sommet situé plus loin dans le tableau !
+	// si now.tabvoisin[0].num > now.num
+	calculPoids(*now,(*now).tabvoisins[0],lvl);
 	
-	
-	
+		
 	
 	
 }
