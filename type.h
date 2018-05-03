@@ -19,7 +19,7 @@ struct station{
 	int poids;
 	int true;
 	int ant;
-	char nompiste[100];
+	//char nompiste[100];
 	station **tabvoisins;
 };
 

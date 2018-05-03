@@ -6,7 +6,7 @@
 #include "aretes.h"
 #include "getinfo.h"
 
-float calculPoids (station s1, station s2, int lvl,char nompiste[])
+float calculPoids (station s1, station s2, int lvl)
 {
 	station *s = init_sommets();
 	liaison *l = init_aretes(s);
@@ -97,7 +97,7 @@ float calculPoids (station s1, station s2, int lvl,char nompiste[])
 		if (poids[i]<pluspetitp)
 		{
 			pluspetitp = poids[i];
-			strcpy(nompiste,buffer[i].nom);
+			//strcpy(nompiste,buffer[i].nom);
 		} 
 	}
 		
@@ -145,11 +145,11 @@ void dijkstra (station dep, station arr, int lvl){
 		{
 			if (((*(*now).tabvoisins[i]).true) == 0)
 			{
-				if ((((*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl,(*now).nompiste))<(*(*now).tabvoisins[i]).poids) || (*(*now).tabvoisins[i]).poids == UNDEFINED )
+				if ((((*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl))<(*(*now).tabvoisins[i]).poids) || (*(*now).tabvoisins[i]).poids == UNDEFINED )
 				{
-						(*(*now).tabvoisins[i]).poids = (*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl,(*now).nompiste);
+						(*(*now).tabvoisins[i]).poids = (*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl);
 						(*(*now).tabvoisins[i]).ant = (*now).num;
-						printf("poids de %s = %d, ant = %d et nom piste = %s\n",(*(*now).tabvoisins[i]).nom,(*(*now).tabvoisins[i]).poids,(*(*now).tabvoisins[i]).ant,(*now).nompiste);
+						printf("poids de %s = %d, ant = %d  \n",(*(*now).tabvoisins[i]).nom,(*(*now).tabvoisins[i]).poids,(*(*now).tabvoisins[i]).ant);
 				}
 			}
 		}
