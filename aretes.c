@@ -4,7 +4,7 @@
 
 liaison *init_aretes(station *s){
 	
-	liaison *l = malloc(77*sizeof(liaison));
+	liaison *l = malloc(82*sizeof(liaison));
 	
 	//teleski
 	
@@ -198,14 +198,26 @@ liaison *init_aretes(station *s){
 	
 	l[30].nom = "Celvan";
 	l[30].type = 4;
-	l[30].metre = 11500;
+	l[30].metre = 4000;
 	l[30].noeuds[0] = s[1];
+	l[30].noeuds[1] = s[2];
+	
+	l[30].nom = "Celvan";
+	l[30].type = 4;
+	l[30].metre = 8500;
+	l[30].noeuds[0] = s[2];
 	l[30].noeuds[1] = s[16];
 	
 	l[31].nom = "3 Croix";
 	l[31].type = 4;
-	l[31].metre = 6750;
+	l[31].metre = 1000;
 	l[31].noeuds[0] = s[21];
+	l[31].noeuds[1] = s[5];
+	
+	l[31].nom = "3 Croix";
+	l[31].type = 4;
+	l[31].metre = 5750;
+	l[31].noeuds[0] = s[5];
 	l[31].noeuds[1] = s[1];
 	
 	//Pistes Bleues
@@ -227,6 +239,12 @@ liaison *init_aretes(station *s){
 	l[34].metre = 500;
 	l[34].noeuds[0] = s[5];
 	l[34].noeuds[1] = s[1];
+	
+	l[35].nom = "Vallons";
+	l[35].type = 5;
+	l[35].metre = 2000;
+	l[35].noeuds[0] = s[1];
+	l[35].noeuds[1] = s[6];
 
 	l[35].nom = "Eftanis";
 	l[35].type = 5;
@@ -382,14 +400,26 @@ liaison *init_aretes(station *s){
 	
 	l[62].nom = "Clot Gauthier";
 	l[62].type = 6;
-	l[62].metre = 2850;
+	l[62].metre = 800;
 	l[62].noeuds[0] = s[8];
+	l[62].noeuds[1] = s[22];
+	
+	l[62].nom = "Clot Gauthier";
+	l[62].type = 6;
+	l[62].metre = 2000;
+	l[62].noeuds[0] = s[22];
 	l[62].noeuds[1] = s[10];
 	
-	l[63].nom = "Bois Lacets";
+	l[63].nom = "Bois";
 	l[63].type = 6;
-	l[63].metre = 2700;
+	l[63].metre = 1800;
 	l[63].noeuds[0] = s[9];
+	l[63].noeuds[1] = s[11];
+	
+	l[63].nom = "Bois puis Lacets";
+	l[63].type = 6;
+	l[63].metre = 2500;
+	l[63].noeuds[0] = s[11];
 	l[63].noeuds[1] = s[25];
 	
 	l[64].nom = "Bez";

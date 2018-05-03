@@ -50,19 +50,19 @@ float calculPoids (station s1, station s2, int lvl)
 	{
 		if (buffer[i].type == 4)
 		{
-			poids[i] = (buffer[i].metre/40);//(buffer[i].metre*0.1))/16
+			poids[i] = (buffer[i].metre/40);
 		}
 		if (buffer[i].type == 5)
 		{
-			poids[i] = (buffer[i].metre/35);//(buffer[i].metre*1))/16
+			poids[i] = (buffer[i].metre/35);
 		}
 		if (buffer[i].type == 6)
 		{
-			poids[i] = (buffer[i].metre/10);//(buffer[i].metre*3))/16
+			poids[i] = (buffer[i].metre/10);
 		}
 		if (buffer[i].type == 7)
 		{
-			poids[i] = (buffer[i].metre/7);//(buffer[i].metre*4))/16
+			poids[i] = (buffer[i].metre/7);
 			
 		}
 			
@@ -71,22 +71,22 @@ float calculPoids (station s1, station s2, int lvl)
 	{
 		if (buffer[i].type == 4)
 		{
-			poids[i] = (buffer[i].metre/50); //(buffer[i].metre*0.1))/16
+			poids[i] = (buffer[i].metre/50); 
 			
 		}
 		if (buffer[i].type == 5)
 		{
-			poids[i] = (buffer[i].metre/60); //(buffer[i].metre*0.2))/16
+			poids[i] = (buffer[i].metre/60);
 			
 		}
 		if (buffer[i].type == 6)
 		{
-			poids[i] = (buffer[i].metre/80); //(buffer[i].metre*0.4))/16
+			poids[i] = (buffer[i].metre/80);
 			
 		}
 		if (buffer[i].type == 7)
 		{
-			poids[i] = (buffer[i].metre/100); //- (buffer[i].metre*0.5))/16
+			poids[i] = (buffer[i].metre/100);
 			
 		}
 			

@@ -1,9 +1,5 @@
 // ! Multiplier par 2 les distances en mètre !
-//Rajouter Vallons de i5 à Serres Ratier
-//Diviser 3 Croix en 2
-//Diviser Celvan (i5 à Aiguillette puis Aiguillette à Chantemerle)
-//Diviser Clot Gauthier (De Clot Gauthier à pied Eychauda)
-//Effacer Bois Lacets puis diviser une piste Bois (de i6 à Fréjus), une piste "Bois puis Lacets" (de i6 à Prairie)
+
 //trou de 54 à 57
 //trou 66 à 68
 //Rajouter Pré Jeanne

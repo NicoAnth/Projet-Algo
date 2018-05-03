@@ -14,8 +14,8 @@ station* init_sommets ()
 	a[5].tabvoisins = malloc (2*sizeof(station));
 	a[6].tabvoisins = malloc (4*sizeof(station));
 	a[7].tabvoisins = malloc (2*sizeof(station));
-	a[8].tabvoisins = malloc (2*sizeof(station));
-	a[9].tabvoisins = malloc (3*sizeof(station));
+	a[8].tabvoisins = malloc (3*sizeof(station));
+	a[9].tabvoisins = malloc (5*sizeof(station));
 	a[10].tabvoisins = malloc (2*sizeof(station));
 	a[11].tabvoisins = malloc (2*sizeof(station));
 	a[12].tabvoisins = malloc (1*sizeof(station));
@@ -93,6 +93,7 @@ station* init_sommets ()
 	a[8].nom = "Clot Gauthier";
 	a[8].tabvoisins[0] = &a[10];
 	a[8].tabvoisins[1] = &a[23];
+	a[8].tabvoisins[2] = &a[22];
 	a[8].nbv = 2;
 	
 	a[9].num = 9;
@@ -100,7 +101,9 @@ station* init_sommets ()
 	a[9].tabvoisins[0] = &a[10];
 	a[9].tabvoisins[1] = &a[6];
 	a[9].tabvoisins[2] = &a[15];
-	a[9].nbv = 3;
+	a[9].tabvoisins[3] = &a[11];
+	a[9].tabvoisins[4] = &a[25];
+	a[9].nbv = 4;
 	
 	a[10].num = 10;
 	a[10].nom = "i9";
