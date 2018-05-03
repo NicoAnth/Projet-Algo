@@ -6,7 +6,7 @@
 #include "aretes.h"
 #include "getinfo.h"
 
-float calculPoids (station s1, station s2, int lvl)
+float calculPoids (station s1, station s2, int lvl,char nompiste[])
 {
 	station *s = init_sommets();
 	liaison *l = init_aretes(s);
@@ -30,19 +30,19 @@ float calculPoids (station s1, station s2, int lvl)
 	
 		if (buffer[i].type == 0)
 		{
-			poids[i] = ((buffer[i].metre + 10000)/3);
+			poids[i] = ((buffer[i].metre + 5000)/3);
 		}
 		if (buffer[i].type == 1)
 		{
-			poids[i] = ((buffer[i].metre + 10000)/4);
+			poids[i] = ((buffer[i].metre + 5000)/5);
 		}
 		if (buffer[i].type == 2)
 		{
-			poids[i] = ((buffer[i].metre + 10000)/4.5);
+			poids[i] = ((buffer[i].metre + 5000)/6.5);
 		}
 		if (buffer[i].type == 3)
 		{
-			poids[i] = ((buffer[i].metre + 10000)/5);
+			poids[i] = ((buffer[i].metre + 5000)/8);
 		}
 		
 	//Calcul poids[i] pistes	
@@ -50,19 +50,19 @@ float calculPoids (station s1, station s2, int lvl)
 	{
 		if (buffer[i].type == 4)
 		{
-			poids[i] = ((buffer[i].metre + (buffer[i].metre*0.1))/12);
+			poids[i] = (buffer[i].metre/40);//(buffer[i].metre*0.1))/16
 		}
 		if (buffer[i].type == 5)
 		{
-			poids[i] = ((buffer[i].metre + (buffer[i].metre*0.2))/12);
+			poids[i] = (buffer[i].metre/35);//(buffer[i].metre*1))/16
 		}
 		if (buffer[i].type == 6)
 		{
-			poids[i] = ((buffer[i].metre + (buffer[i].metre*0.5))/12);
+			poids[i] = (buffer[i].metre/10);//(buffer[i].metre*3))/16
 		}
 		if (buffer[i].type == 7)
 		{
-			poids[i] = ((buffer[i].metre + (buffer[i].metre*0.8))/12);
+			poids[i] = (buffer[i].metre/7);//(buffer[i].metre*4))/16
 			
 		}
 			
@@ -71,22 +71,22 @@ float calculPoids (station s1, station s2, int lvl)
 	{
 		if (buffer[i].type == 4)
 		{
-			poids[i] = ((buffer[i].metre - (buffer[i].metre*0.1))/12);
+			poids[i] = (buffer[i].metre/50); //(buffer[i].metre*0.1))/16
 			
 		}
 		if (buffer[i].type == 5)
 		{
-			poids[i] = ((buffer[i].metre - (buffer[i].metre*0.2))/12);
+			poids[i] = (buffer[i].metre/60); //(buffer[i].metre*0.2))/16
 			
 		}
 		if (buffer[i].type == 6)
 		{
-			poids[i] = ((buffer[i].metre - (buffer[i].metre*0.4))/12);
+			poids[i] = (buffer[i].metre/80); //(buffer[i].metre*0.4))/16
 			
 		}
 		if (buffer[i].type == 7)
 		{
-			poids[i] = ((buffer[i].metre - (buffer[i].metre*0.5))/12);
+			poids[i] = (buffer[i].metre/100); //- (buffer[i].metre*0.5))/16
 			
 		}
 			
@@ -97,6 +97,7 @@ float calculPoids (station s1, station s2, int lvl)
 		if (poids[i]<pluspetitp)
 		{
 			pluspetitp = poids[i];
+			strcpy(nompiste,buffer[i].nom);
 		} 
 	}
 		
@@ -144,11 +145,11 @@ void dijkstra (station dep, station arr, int lvl){
 		{
 			if (((*(*now).tabvoisins[i]).true) == 0)
 			{
-				if ((((*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl))<(*(*now).tabvoisins[i]).poids) || (*(*now).tabvoisins[i]).poids == UNDEFINED )
+				if ((((*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl,(*now).nompiste))<(*(*now).tabvoisins[i]).poids) || (*(*now).tabvoisins[i]).poids == UNDEFINED )
 				{
-						(*(*now).tabvoisins[i]).poids = (*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl);
+						(*(*now).tabvoisins[i]).poids = (*now).poids + calculPoids(*now,(*(*now).tabvoisins[i]),lvl,(*now).nompiste);
 						(*(*now).tabvoisins[i]).ant = (*now).num;
-						printf("poids de %s = %d et ant = %d\n",(*(*now).tabvoisins[i]).nom,(*(*now).tabvoisins[i]).poids,(*(*now).tabvoisins[i]).ant);
+						printf("poids de %s = %d, ant = %d et nom piste = %s\n",(*(*now).tabvoisins[i]).nom,(*(*now).tabvoisins[i]).poids,(*(*now).tabvoisins[i]).ant,(*now).nompiste);
 				}
 			}
 		}

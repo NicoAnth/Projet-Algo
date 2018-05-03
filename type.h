@@ -10,6 +10,7 @@
 //La variable true indique si le noeud a deja été parcouru
 //La variable ant permet de connaitre le predecesseur du noeud
 //La variable tabvoisins correspond au tableau d'adresses des voisins
+//Le nom de la piste utilisée pour arriver à cette station
 typedef struct station station;
 struct station{
 	char* nom;
@@ -18,6 +19,7 @@ struct station{
 	int poids;
 	int true;
 	int ant;
+	char nompiste[100];
 	station **tabvoisins;
 };
 
