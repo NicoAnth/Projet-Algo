@@ -6,8 +6,6 @@
 #include "aretes.h"
 #include "getinfo.h"
 
-#define UNDEFINED -1
-
 float calculPoids (station s1, station s2, int lvl)
 {
 	station *s = init_sommets();
@@ -25,7 +23,7 @@ float calculPoids (station s1, station s2, int lvl)
 			j++;
 		}
 	}
-	// ! Revoir boucle !
+	
 	for (i=0;i<j;i++)
 	{ 
 	// Calcul poids remontées
@@ -127,7 +125,6 @@ void dijkstra (station dep, station arr, int lvl){
 		}
 	}
 	  
-	//j;
 	while ((*now).num != arr.num)
 	{
 		
@@ -160,5 +157,4 @@ void dijkstra (station dep, station arr, int lvl){
 	}
 	printf("\nPoids du plus court chemin jusqu'à %s = %d\n",arr.nom,(*now).poids);
 	printf("%d",(*now).ant);
-	
 }

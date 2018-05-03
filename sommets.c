@@ -177,7 +177,7 @@ station* init_sommets ()
 	a[22].num = 22;
 	a[22].nom = "Pied Eychauda";
 	a[22].tabvoisins[0] = &a[7];
-	a[22].tabvoisins[0] = &a[10];
+	a[22].tabvoisins[1] = &a[10];
 	a[22].nbv = 2;
 	
 	a[23].num = 23;

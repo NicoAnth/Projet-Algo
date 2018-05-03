@@ -3,7 +3,7 @@
 
 #ifndef H_TYPE
 #define H_TYPE
-
+#define UNDEFINED -1
 //La struct station se décompose comme suit :
 //La variable poids permet de determiner le poids final du noeud
 //La variable nbv recense le nombre de voisins
